@@ -1,0 +1,10 @@
+# 统一换行符，避免 Windows 与 Linux/macOS 混用时脚本报错
+* text=auto eol=lf
+
+# 批处理必须是 CRLF，否则 Windows 下可能执行异常
+*.bat text eol=crlf
+
+# 二进制文件不要做任何转换（否则图标会损坏）
+*.png binary
+*.ico binary
+*.db binary

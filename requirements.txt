@@ -1,0 +1,7 @@
+# 局域网聊天室 —— 依赖清单
+# 说明：Python 3.10+ 自带 sqlite3 模块，数据库不需要额外安装任何东西。
+# 安装命令：pip install -r requirements.txt
+
+fastapi==0.115.0      # Web 框架，自带 WebSocket（实时通信）支持
+uvicorn==0.30.0       # 运行 FastAPI 的服务器程序
+websockets==12.0      # WebSocket 底层通信库
